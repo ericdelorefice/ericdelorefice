@@ -1,4 +1,4 @@
-# Eric DelOrefice
+# Eric Del Orefice
 
 Cyber Security and Game Design senior at High Point University. Air Force ROTC cadet, commissioning
 into the U.S. Space Force in spring 2027.
