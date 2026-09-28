@@ -35,6 +35,7 @@ problem" and find out what would have to be true for it to be wrong.
 
 ## Elsewhere
 
+- [LinkedIn](https://www.linkedin.com/in/eric-del-orefice-632626286/)
 - Azure Fundamentals (AZ-900) - sitting the exam this week
 - Interested in cyberspace operations, agent reliability, and the gap between a system that reports
   success and one that succeeded
