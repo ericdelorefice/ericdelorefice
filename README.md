@@ -13,11 +13,11 @@ an empty result instead of an error. The caller sees "no documents" and carries 
 finding this in the vector-store and config layers of the major open-source agent frameworks and
 sending fixes upstream, each with a reproduction and a test that fails on the old code.
 
-- [deepset-ai/haystack-core-integrations](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) - Qdrant fix merged; pgvector fix open
+- [deepset-ai/haystack-core-integrations](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) - **Qdrant fix merged**; pgvector fix open and in review
 - [agno-agi/agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice)
 - [browser-use/browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice)
 - [camel-ai/camel](https://github.com/camel-ai/camel/pulls?q=author%3Aericdelorefice)
-- [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router/pulls?q=author%3Aericdelorefice)
+- [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router/pulls?q=author%3Aericdelorefice) - **merged**: a failed Qdrant scroll was reported as an empty index, and with `auto_sync="remote"` that deleted every local route the reply omitted
 - [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel/pulls?q=author%3Aericdelorefice)
 - [run-llama/llama_index](https://github.com/run-llama/llama_index/pulls?q=author%3Aericdelorefice)
 - [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice)
@@ -36,6 +36,6 @@ problem" and find out what would have to be true for it to be wrong.
 ## Elsewhere
 
 - [LinkedIn](https://www.linkedin.com/in/eric-del-orefice-632626286/)
-- Azure Fundamentals (AZ-900) - sitting the exam this week
+- Azure Fundamentals (AZ-900) - exam booked for 30 September 2026
 - Interested in cyberspace operations, agent reliability, and the gap between a system that reports
   success and one that succeeded
