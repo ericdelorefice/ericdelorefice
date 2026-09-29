@@ -13,7 +13,7 @@ an empty result instead of an error. The caller sees "no documents" and carries 
 finding this in the vector-store and config layers of the major open-source agent frameworks and
 sending fixes upstream, each with a reproduction and a test that fails on the old code.
 
-- [deepset-ai/haystack-core-integrations](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) - **Qdrant fix merged**; pgvector fix open and in review
+- [deepset-ai/haystack-core-integrations](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) - **both merged**: a Qdrant backend failure was reported as an empty result, and in pgvector an empty filter deleted the whole table and called it a match
 - [agno-agi/agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice)
 - [browser-use/browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice)
 - [camel-ai/camel](https://github.com/camel-ai/camel/pulls?q=author%3Aericdelorefice)
