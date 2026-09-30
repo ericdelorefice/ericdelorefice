@@ -15,12 +15,13 @@ frameworks and sending fixes upstream, each with a reproduction and a test that 
 code.
 
 - [deepset-ai/haystack-core-integrations](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) - **both merged**: a Qdrant backend failure was reported as an empty result, and in pgvector an empty filter deleted the whole table and called it a match
-- [agno-agi/agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice) - an async `delete_run` that failed reported the run as missing, where the sync twin in the same backend raises
+- [agno-agi/agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice) - an async `delete_run` that failed reported the run as missing where the sync twin in the same backend raises, and a LightRAG search that could not run returned the same empty list as one that matched nothing
 - [browser-use/browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice)
-- [camel-ai/camel](https://github.com/camel-ai/camel/pulls?q=author%3Aericdelorefice)
+- [camel-ai/camel](https://github.com/camel-ai/camel/pulls?q=author%3Aericdelorefice) - a Weaviate failure reported as a missing collection, and a Redis store whose `save()` returns the same value whether or not the write happened
 - [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router/pulls?q=author%3Aericdelorefice) - **merged**: a failed Qdrant scroll was reported as an empty index, and with `auto_sync="remote"` that deleted every local route the reply omitted
-- [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel/pulls?q=author%3Aericdelorefice)
+- [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel/pulls?q=author%3Aericdelorefice) - a Chroma collection check caught too much and its delete caught too little, because the error chromadb raises for a missing collection changed inside the supported version range
 - [run-llama/llama_index](https://github.com/run-llama/llama_index/pulls?q=author%3Aericdelorefice) - a Cosmos DB delete that could never have run reported the key as absent, and a throttled Tablestore read came back as "no such key"
+- [mem0ai/mem0](https://github.com/mem0ai/mem0/pulls?q=author%3Aericdelorefice) - an Elasticsearch `get()` that returned "no such vector" for an unreachable cluster
 - [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice)
 - [sardine-ai/mcp-server-manager](https://github.com/sardine-ai/mcp-server-manager/pulls?q=author%3Aericdelorefice)
 
