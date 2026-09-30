@@ -37,6 +37,6 @@ problem" and find out what would have to be true for it to be wrong.
 ## Elsewhere
 
 - [LinkedIn](https://www.linkedin.com/in/eric-del-orefice-632626286/)
-- Azure Fundamentals (AZ-900) - exam booked for 30 September 2026
+- [Microsoft Certified: Azure Fundamentals](https://learn.microsoft.com/api/credentials/share/en-us/EricDelOreficeUS-3925/8DF8357088C8270B?sharingId=EEE2549C09835466) - passed 30 September 2026
 - Interested in cyberspace operations, agent reliability, and the gap between a system that reports
   success and one that succeeded
