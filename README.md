@@ -15,7 +15,7 @@ frameworks and sending fixes upstream, each with a reproduction and a test that 
 code.
 
 - [deepset-ai/haystack-core-integrations](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) - **both merged**: a Qdrant backend failure was reported as an empty result, and in pgvector an empty filter deleted the whole table and called it a match
-- [agno-agi/agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice) - an async `delete_run` that failed reported the run as missing where the sync twin in the same backend raises, and a LightRAG search that could not run returned the same empty list as one that matched nothing
+- [agno-agi/agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice) - async deletes and memory reads that failed reported a missing run or a user with no memories, where the sync twin in the same backend raises; and a LightRAG search that could not run returned the same empty list as one that matched nothing
 - [browser-use/browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice)
 - [camel-ai/camel](https://github.com/camel-ai/camel/pulls?q=author%3Aericdelorefice) - a Weaviate failure reported as a missing collection, and a Redis store whose `save()` returns the same value whether or not the write happened
 - [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router/pulls?q=author%3Aericdelorefice) - **merged**: a failed Qdrant scroll was reported as an empty index, and with `auto_sync="remote"` that deleted every local route the reply omitted
