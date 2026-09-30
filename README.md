@@ -19,8 +19,8 @@ a test that fails on the old code.
 
 | Project | What was wrong |
 |---|---|
-| [haystack-core-integrations #3997](https://github.com/deepset-ai/haystack-core-integrations/pull/3997) | A Qdrant backend failure came back as an empty result |
-| [haystack-core-integrations #4006](https://github.com/deepset-ai/haystack-core-integrations/pull/4006) | In pgvector, an empty filter deleted the whole table |
+| [haystack #3997](https://github.com/deepset-ai/haystack-core-integrations/pull/3997) | A Qdrant backend failure came back as an empty result |
+| [haystack #4006](https://github.com/deepset-ai/haystack-core-integrations/pull/4006) | In pgvector, an empty filter deleted the whole table |
 | [semantic-router #706](https://github.com/aurelio-labs/semantic-router/pull/706) | A failed Qdrant read looked like an empty index, and remote sync then deleted local routes |
 | [agno #10682](https://github.com/agno-agi/agno/pull/10682) | A delete that failed reported the run as missing |
 
@@ -38,7 +38,7 @@ a test that fails on the old code.
 | [llama_index](https://github.com/run-llama/llama_index/pulls?q=author%3Aericdelorefice) | Failed deletes, reads and queries look like missing keys or no matches |
 | [cognee](https://github.com/topoteretes/cognee/pulls?q=author%3Aericdelorefice) | Neptune graph writes report success when nothing was written |
 | [camel](https://github.com/camel-ai/camel/pulls?q=author%3Aericdelorefice) | A Weaviate failure looks like a missing collection |
-| [haystack-core-integrations](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) | An ArcadeDB recreate that was refused reports success |
+| [haystack](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) | An ArcadeDB recreate that was refused reports success |
 | [browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice) | An unreadable config file gets overwritten with defaults |
 | [crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice) | Any S3 error is treated as a missing bucket |
 | [mcp-server-manager](https://github.com/sardine-ai/mcp-server-manager/pulls?q=author%3Aericdelorefice) | Exported configuration is written with open file permissions |
