@@ -10,16 +10,17 @@ what they get wrong quietly.
 
 **One defect, ten frameworks.** A storage or search backend fails, and the adapter above it reports
 an empty result instead of an error. The caller sees "no documents" and carries on. I have been
-finding this in the vector-store and config layers of the major open-source agent frameworks and
-sending fixes upstream, each with a reproduction and a test that fails on the old code.
+finding this in the storage, vector-store and config layers of the major open-source agent
+frameworks and sending fixes upstream, each with a reproduction and a test that fails on the old
+code.
 
 - [deepset-ai/haystack-core-integrations](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) - **both merged**: a Qdrant backend failure was reported as an empty result, and in pgvector an empty filter deleted the whole table and called it a match
-- [agno-agi/agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice)
+- [agno-agi/agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice) - an async `delete_run` that failed reported the run as missing, where the sync twin in the same backend raises
 - [browser-use/browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice)
 - [camel-ai/camel](https://github.com/camel-ai/camel/pulls?q=author%3Aericdelorefice)
 - [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router/pulls?q=author%3Aericdelorefice) - **merged**: a failed Qdrant scroll was reported as an empty index, and with `auto_sync="remote"` that deleted every local route the reply omitted
 - [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel/pulls?q=author%3Aericdelorefice)
-- [run-llama/llama_index](https://github.com/run-llama/llama_index/pulls?q=author%3Aericdelorefice)
+- [run-llama/llama_index](https://github.com/run-llama/llama_index/pulls?q=author%3Aericdelorefice) - a Cosmos DB delete that could never have run reported the key as absent, and a throttled Tablestore read came back as "no such key"
 - [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice)
 - [sardine-ai/mcp-server-manager](https://github.com/sardine-ai/mcp-server-manager/pulls?q=author%3Aericdelorefice)
 
