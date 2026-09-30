@@ -8,7 +8,7 @@ what they get wrong quietly.
 
 ## What I am working on
 
-**One defect, ten frameworks.** A storage or search backend fails, and the adapter above it reports
+**One defect, eleven frameworks.** A storage or search backend fails, and the adapter above it reports
 an empty result instead of an error. The caller sees "no documents" and carries on. I have been
 finding this in the storage, vector-store and config layers of the major open-source agent
 frameworks and sending fixes upstream, each with a reproduction and a test that fails on the old
@@ -22,6 +22,7 @@ code.
 - [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel/pulls?q=author%3Aericdelorefice) - a Chroma collection check caught too much and its delete caught too little, because the error chromadb raises for a missing collection changed inside the supported version range; and a Cosmos DB check that reported a throttled request as a missing container
 - [run-llama/llama_index](https://github.com/run-llama/llama_index/pulls?q=author%3Aericdelorefice) - a Cosmos DB delete that could never have run reported the key as absent, a throttled Tablestore read came back as "no such key", and a retriever returned the same empty list for a failed query as for one that matched nothing
 - [mem0ai/mem0](https://github.com/mem0ai/mem0/pulls?q=author%3Aericdelorefice) - an Elasticsearch `get()` that returned "no such vector" for an unreachable cluster
+- [topoteretes/cognee](https://github.com/topoteretes/cognee/pulls?q=author%3Aericdelorefice) - Neptune graph writes that reported success when nothing was written, because the fallback from a bulk query to one item at a time skipped every failure
 - [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice)
 - [sardine-ai/mcp-server-manager](https://github.com/sardine-ai/mcp-server-manager/pulls?q=author%3Aericdelorefice)
 
