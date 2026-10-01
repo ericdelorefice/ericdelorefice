@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**5 merged, 24 open.**
+**5 merged, 25 open.**
 
 ### Merged
 
@@ -33,7 +33,7 @@ a test that fails on the old code.
 | [langchain-aws](https://github.com/langchain-ai/langchain-aws/pulls?q=author%3Aericdelorefice) | One failed read makes an agent forget its conversation, or overwrite a stored memory |
 | [langgraph-redis](https://github.com/redis-developer/langgraph-redis/pulls?q=author%3Aericdelorefice) | History "before" a checkpoint returns the whole history |
 | [langchain-azure](https://github.com/langchain-ai/langchain-azure/pulls?q=author%3Aericdelorefice) | SQL Server lookups say "no such documents"; a failed delete says success |
-| [feast](https://github.com/feast-dev/feast/pulls?q=author%3Aericdelorefice) | A failed Trino monitoring query reads as "no metrics" |
+| [feast](https://github.com/feast-dev/feast/pulls?q=author%3Aericdelorefice) | Failed monitoring reads (Trino, Dask) are reported as "no data" |
 | [ogx](https://github.com/ogx-ai/ogx/pulls?q=author%3Aericdelorefice) (Llama Stack) | A failed Milvus search drops the caller's filters |
 | [dify](https://github.com/langgenius/dify/pulls?q=author%3Aericdelorefice) | Oracle inserts that failed are returned as stored |
 | [unstructured-ingest](https://github.com/Unstructured-IO/unstructured-ingest/pulls?q=author%3Aericdelorefice) | A failed Milvus schema check strips metadata from rows |
