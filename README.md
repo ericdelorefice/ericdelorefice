@@ -6,7 +6,7 @@ into the U.S. Space Force in spring 2027.
 I build agent systems that run unattended against real services, and I spend most of my time on
 what they get wrong quietly.
 
-## One defect, eighteen projects
+## One defect, nineteen projects
 
 A database or search backend fails, and the code above it reports "nothing there" instead of an
 error. The caller carries on as if the data never existed. I find this in open-source agent
