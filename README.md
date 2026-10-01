@@ -6,14 +6,14 @@ into the U.S. Space Force in spring 2027.
 I build agent systems that run unattended against real services, and I spend most of my time on
 what they get wrong quietly.
 
-## One defect, seventeen projects
+## One defect, eighteen projects
 
 A database or search backend fails, and the code above it reports "nothing there" instead of an
 error. The caller carries on as if the data never existed. I find this in open-source agent
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**4 merged, 22 open.**
+**4 merged, 23 open.**
 
 ### Merged
 
@@ -30,6 +30,7 @@ a test that fails on the old code.
 |---|---|
 | [agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice) | Failed searches and memory reads return empty results |
 | [langchain-aws](https://github.com/langchain-ai/langchain-aws/pulls?q=author%3Aericdelorefice) | One failed read makes an agent forget its conversation |
+| [langgraph-redis](https://github.com/redis-developer/langgraph-redis/pulls?q=author%3Aericdelorefice) | History "before" a checkpoint returns the whole history |
 | [langchain-azure](https://github.com/langchain-ai/langchain-azure/pulls?q=author%3Aericdelorefice) | SQL Server lookups say "no such documents"; a failed delete says success |
 | [feast](https://github.com/feast-dev/feast/pulls?q=author%3Aericdelorefice) | Couchbase writes that failed are counted as written |
 | [ogx](https://github.com/ogx-ai/ogx/pulls?q=author%3Aericdelorefice) (Llama Stack) | A failed Milvus search drops the caller's filters |
