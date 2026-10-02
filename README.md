@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**8 merged, 23 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**8 merged, 24 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -39,6 +39,7 @@ a test that fails on the old code.
 | [ogx](https://github.com/ogx-ai/ogx/pulls?q=author%3Aericdelorefice) (Llama Stack) | A failed Milvus search drops the caller's filters |
 | [dify](https://github.com/langgenius/dify/pulls?q=author%3Aericdelorefice) | Oracle inserts that failed are returned as stored |
 | [unstructured-ingest](https://github.com/Unstructured-IO/unstructured-ingest/pulls?q=author%3Aericdelorefice) | A failed Milvus schema check strips metadata from rows |
+| [cognee](https://github.com/topoteretes/cognee/pulls?q=author%3Aericdelorefice) | A Ladybug graph that cannot be read looks like an empty graph |
 | [kedro-plugins](https://github.com/kedro-org/kedro-plugins/pulls?q=author%3Aericdelorefice) | A failed Snowflake existence check reads as a missing table, so the pipeline step reruns |
 | [semantic-kernel](https://github.com/microsoft/semantic-kernel/pulls?q=author%3Aericdelorefice) | Chroma and Cosmos DB report errors as missing collections |
 | [llama_index](https://github.com/run-llama/llama_index/pulls?q=author%3Aericdelorefice) | Failed deletes, reads and queries look like missing keys or no matches |
