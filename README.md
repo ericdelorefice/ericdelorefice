@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**8 merged, 24 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**8 merged, 23 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
