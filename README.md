@@ -6,14 +6,14 @@ into the U.S. Space Force in spring 2027.
 I build agent systems that run unattended against real services, and I spend most of my time on
 what they get wrong quietly.
 
-## One defect, nineteen projects
+## One defect, twenty projects
 
 A database or search backend fails, and the code above it reports "nothing there" instead of an
 error. The caller carries on as if the data never existed. I find this in open-source agent
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**8 merged, 24 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**8 merged, 25 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -48,7 +48,15 @@ a test that fails on the old code.
 | [browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice) | An unreadable config file gets overwritten with defaults |
 | [crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice) | Any S3 error is treated as a missing bucket |
 | [mcp-server-manager](https://github.com/sardine-ai/mcp-server-manager/pulls?q=author%3Aericdelorefice) | Exported configuration is written with open file permissions |
+| [instructor](https://github.com/567-labs/instructor/pulls?q=author%3Aericdelorefice) | A streamed list cut off at the token limit comes back shorter, with no error |
 | [mem0](https://github.com/mem0ai/mem0/issues/7516) | An unreachable Elasticsearch cluster looks like a missing vector (fix waits on the issue being accepted) |
+
+## Work with me
+
+If your project wraps a database, vector store, cache or queue, I will scan its adapters for this
+defect for free and send you a count and one finding worked in full. Fixes are a fixed price agreed
+before I start, and every one ships with a test that fails on your current code.
+[eric.delorefice@outlook.com](mailto:eric.delorefice@outlook.com)
 
 ## Also
 
