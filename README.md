@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**8 merged, 25 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**9 merged, 26 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -27,6 +27,7 @@ a test that fails on the old code.
 | [feast #6918](https://github.com/feast-dev/feast/pull/6918) | A failed Trino monitoring query read as "no metrics" |
 | [feast #6920](https://github.com/feast-dev/feast/pull/6920) | A failed Dask monitoring read was reported as "no data" |
 | [cognee #5320](https://github.com/topoteretes/cognee/pull/5320) | Neptune graph writes reported success when nothing was written (my fix, merged through the maintainer's PR with co-author credit) |
+| [langchain-azure #1119](https://github.com/langchain-ai/langchain-azure/pull/1119) | SQL Server lookups that failed said "no such documents", and a failed delete could report success |
 
 ### Open
 
@@ -35,7 +36,6 @@ a test that fails on the old code.
 | [agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice) | Failed searches and memory reads return empty results |
 | [langchain-aws](https://github.com/langchain-ai/langchain-aws/pulls?q=author%3Aericdelorefice) | One failed read makes an agent forget its conversation, or overwrite a stored memory |
 | [langgraph-redis](https://github.com/redis-developer/langgraph-redis/pulls?q=author%3Aericdelorefice) | History "before" a checkpoint returns the whole history |
-| [langchain-azure](https://github.com/langchain-ai/langchain-azure/pulls?q=author%3Aericdelorefice) | SQL Server lookups say "no such documents"; a failed delete says success |
 | [ogx](https://github.com/ogx-ai/ogx/pulls?q=author%3Aericdelorefice) (Llama Stack) | A failed Milvus search drops the caller's filters |
 | [dify](https://github.com/langgenius/dify/pulls?q=author%3Aericdelorefice) | Oracle inserts that failed are returned as stored |
 | [unstructured-ingest](https://github.com/Unstructured-IO/unstructured-ingest/pulls?q=author%3Aericdelorefice) | A failed Milvus schema check strips metadata from rows |
@@ -48,6 +48,8 @@ a test that fails on the old code.
 | [browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice) | An unreadable config file gets overwritten with defaults |
 | [crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice) | Any S3 error is treated as a missing bucket |
 | [mcp-server-manager](https://github.com/sardine-ai/mcp-server-manager/pulls?q=author%3Aericdelorefice) | Exported configuration is written with open file permissions |
+| [semantic-router](https://github.com/aurelio-labs/semantic-router/pulls?q=author%3Aericdelorefice) | The async Qdrant readiness check answers "not ready" on any error, where the sync check raises |
+| [langroid](https://github.com/langroid/langroid/pulls?q=author%3Aericdelorefice) | A LanceDB write that fails is logged and the documents are reported as ingested |
 | [instructor](https://github.com/567-labs/instructor/pulls?q=author%3Aericdelorefice) | A streamed list cut off at the token limit comes back shorter, with no error |
 | [mem0](https://github.com/mem0ai/mem0/issues/7516) | An unreachable Elasticsearch cluster looks like a missing vector (fix waits on the issue being accepted) |
 
