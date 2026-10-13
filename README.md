@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**11 merged, 24 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**12 merged, 26 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -30,6 +30,7 @@ a test that fails on the old code.
 | [langchain-azure #1119](https://github.com/langchain-ai/langchain-azure/pull/1119) | SQL Server lookups that failed said "no such documents", and a failed delete could report success |
 | [langgraph-redis #206](https://github.com/redis-developer/langgraph-redis/pull/206) | History "before" a checkpoint returned the whole history |
 | [langroid #1201](https://github.com/langroid/langroid/pull/1201) | A LanceDB write that failed was logged and the documents reported as ingested |
+| [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
 
 ### Open
 
@@ -48,8 +49,10 @@ a test that fails on the old code.
 | [haystack](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) | An ArcadeDB recreate that was refused reports success |
 | [browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice) | An unreadable config file gets overwritten with defaults |
 | [crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice) | Any S3 error is treated as a missing bucket |
-| [mcp-server-manager](https://github.com/sardine-ai/mcp-server-manager/pulls?q=author%3Aericdelorefice) | Exported configuration is written with open file permissions |
 | [semantic-router](https://github.com/aurelio-labs/semantic-router/pulls?q=author%3Aericdelorefice) | The async Qdrant readiness check answers "not ready" on any error, where the sync check raises |
+| [redis-vl-python](https://github.com/redis/redis-vl-python/pulls?q=author%3Aericdelorefice) | `messages` stops at 10 or 1,000 messages instead of returning the whole session |
+| [langchain-turbopuffer](https://github.com/turbopuffer/langchain-turbopuffer/pulls?q=author%3Aericdelorefice) | Any error whose text contains "404" is read as a missing namespace, so search returns nothing |
+| [hermes-agent-memory](https://github.com/lancedb/hermes-agent-memory/pulls?q=author%3Aericdelorefice) (LanceDB) | Recall answers "no memories" when the table cannot be read |
 | [instructor](https://github.com/567-labs/instructor/pulls?q=author%3Aericdelorefice) | A streamed list cut off at the token limit comes back shorter, with no error |
 | [mem0](https://github.com/mem0ai/mem0/issues/7516) | An unreachable Elasticsearch cluster looks like a missing vector (fix waits on the issue being accepted) |
 
