@@ -1,6 +1,6 @@
 # Eric Del Orefice
 
-Cyber Security and Game Design senior at High Point University. Air Force ROTC cadet, commissioning
+Cybersecurity senior (minor in Game Design) at High Point University. Air Force ROTC cadet, commissioning
 into the U.S. Space Force in spring 2027.
 
 I build agent systems that run unattended against real services, and I spend most of my time on
@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**12 merged, 26 open.** Three of the merges are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**13 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -30,31 +30,13 @@ a test that fails on the old code.
 | [langchain-azure #1119](https://github.com/langchain-ai/langchain-azure/pull/1119) | SQL Server lookups that failed said "no such documents", and a failed delete could report success |
 | [langgraph-redis #206](https://github.com/redis-developer/langgraph-redis/pull/206) | History "before" a checkpoint returned the whole history |
 | [langroid #1201](https://github.com/langroid/langroid/pull/1201) | A LanceDB write that failed was logged and the documents reported as ingested |
+| [redis-vl-python #752](https://github.com/redis/redis-vl-python/pull/752) | `messages` stopped at 10 or 1,000 messages instead of returning the whole session |
 | [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
 
-### Open
+### In review
 
-| Project | What is wrong |
-|---|---|
-| [agno](https://github.com/agno-agi/agno/pulls?q=author%3Aericdelorefice) | Failed searches and memory reads return empty results |
-| [langchain-aws](https://github.com/langchain-ai/langchain-aws/pulls?q=author%3Aericdelorefice) | One failed read makes an agent forget its conversation, or overwrite a stored memory |
-| [ogx](https://github.com/ogx-ai/ogx/pulls?q=author%3Aericdelorefice) (Llama Stack) | A failed Milvus search drops the caller's filters |
-| [dify](https://github.com/langgenius/dify/pulls?q=author%3Aericdelorefice) | Oracle inserts that failed are returned as stored |
-| [unstructured-ingest](https://github.com/Unstructured-IO/unstructured-ingest/pulls?q=author%3Aericdelorefice) | A failed Milvus schema check strips metadata from rows |
-| [cognee](https://github.com/topoteretes/cognee/pulls?q=author%3Aericdelorefice) | A Ladybug graph that cannot be read looks like an empty graph |
-| [kedro-plugins](https://github.com/kedro-org/kedro-plugins/pulls?q=author%3Aericdelorefice) | A failed Snowflake existence check reads as a missing table, so the pipeline step reruns |
-| [semantic-kernel](https://github.com/microsoft/semantic-kernel/pulls?q=author%3Aericdelorefice) | Chroma and Cosmos DB report errors as missing collections |
-| [llama_index](https://github.com/run-llama/llama_index/pulls?q=author%3Aericdelorefice) | Failed deletes, reads and queries look like missing keys or no matches |
-| [camel](https://github.com/camel-ai/camel/pulls?q=author%3Aericdelorefice) | A Weaviate failure looks like a missing collection |
-| [haystack](https://github.com/deepset-ai/haystack-core-integrations/pulls?q=author%3Aericdelorefice) | An ArcadeDB recreate that was refused reports success |
-| [browser-use](https://github.com/browser-use/browser-use/pulls?q=author%3Aericdelorefice) | An unreadable config file gets overwritten with defaults |
-| [crewAI](https://github.com/crewAIInc/crewAI/pulls?q=author%3Aericdelorefice) | Any S3 error is treated as a missing bucket |
-| [semantic-router](https://github.com/aurelio-labs/semantic-router/pulls?q=author%3Aericdelorefice) | The async Qdrant readiness check answers "not ready" on any error, where the sync check raises |
-| [redis-vl-python](https://github.com/redis/redis-vl-python/pulls?q=author%3Aericdelorefice) | `messages` stops at 10 or 1,000 messages instead of returning the whole session |
-| [langchain-turbopuffer](https://github.com/turbopuffer/langchain-turbopuffer/pulls?q=author%3Aericdelorefice) | Any error whose text contains "404" is read as a missing namespace, so search returns nothing |
-| [hermes-agent-memory](https://github.com/lancedb/hermes-agent-memory/pulls?q=author%3Aericdelorefice) (LanceDB) | Recall answers "no memories" when the table cannot be read |
-| [instructor](https://github.com/567-labs/instructor/pulls?q=author%3Aericdelorefice) | A streamed list cut off at the token limit comes back shorter, with no error |
-| [mem0](https://github.com/mem0ai/mem0/issues/7516) | An unreachable Elasticsearch cluster looks like a missing vector (fix waits on the issue being accepted) |
+I also have fixes open across many other projects, from LlamaIndex and Semantic Kernel to crewAI,
+Dify and LangChain. [See them all](https://github.com/search?q=is%3Apr+is%3Aopen+author%3Aericdelorefice+-user%3Aericdelorefice&type=pullrequests).
 
 ## Work with me
 
