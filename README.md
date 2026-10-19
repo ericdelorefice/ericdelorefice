@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**14 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**15 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -30,6 +30,7 @@ a test that fails on the old code.
 | [langchain-azure #1119](https://github.com/langchain-ai/langchain-azure/pull/1119) | SQL Server lookups that failed said "no such documents", and a failed delete could report success |
 | [langgraph-redis #206](https://github.com/redis-developer/langgraph-redis/pull/206) | History "before" a checkpoint returned the whole history |
 | [langgraph-redis #212](https://github.com/redis-developer/langgraph-redis/pull/212) | My own #206 could return the "before" checkpoint itself when its timestamp rounded down (about one run in twenty); fixed once the repo's CI caught it |
+| [langgraph-redis #211](https://github.com/redis-developer/langgraph-redis/pull/211) | The async shallow saver treated a failed read of pending writes as "no pending writes" |
 | [langroid #1201](https://github.com/langroid/langroid/pull/1201) | A LanceDB write that failed was logged and the documents reported as ingested |
 | [redis-vl-python #752](https://github.com/redis/redis-vl-python/pull/752) | `messages` stopped at 10 or 1,000 messages instead of returning the whole session |
 | [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
