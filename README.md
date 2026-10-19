@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**15 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**16 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -28,6 +28,7 @@ a test that fails on the old code.
 | [feast #6920](https://github.com/feast-dev/feast/pull/6920) | A failed Dask monitoring read was reported as "no data" |
 | [cognee #5320](https://github.com/topoteretes/cognee/pull/5320) | Neptune graph writes reported success when nothing was written (my fix, merged through the maintainer's PR with co-author credit) |
 | [langchain-azure #1119](https://github.com/langchain-ai/langchain-azure/pull/1119) | SQL Server lookups that failed said "no such documents", and a failed delete could report success |
+| [langchain-aws #1345](https://github.com/langchain-ai/langchain-aws/pull/1345) | DynamoDBStore answered a failed read with "nothing there" (`None` or `[]`) |
 | [langgraph-redis #206](https://github.com/redis-developer/langgraph-redis/pull/206) | History "before" a checkpoint returned the whole history |
 | [langgraph-redis #212](https://github.com/redis-developer/langgraph-redis/pull/212) | My own #206 could return the "before" checkpoint itself when its timestamp rounded down (about one run in twenty); fixed once the repo's CI caught it |
 | [langgraph-redis #211](https://github.com/redis-developer/langgraph-redis/pull/211) | The async shallow saver treated a failed read of pending writes as "no pending writes" |
