@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**19 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**20 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -23,6 +23,7 @@ a test that fails on the old code.
 | [haystack #4006](https://github.com/deepset-ai/haystack-core-integrations/pull/4006) | In pgvector, an empty filter deleted the whole table |
 | [haystack #4027](https://github.com/deepset-ai/haystack-core-integrations/pull/4027) | In ArcadeDB, a refused `DROP TYPE` was reported as a completed recreate and the old documents were kept |
 | [semantic-router #706](https://github.com/aurelio-labs/semantic-router/pull/706) | A failed Qdrant read looked like an empty index, and remote sync then deleted local routes |
+| [semantic-router #714](https://github.com/aurelio-labs/semantic-router/pull/714) | The async Qdrant readiness check reported a failed connection as "not ready" where the sync one raised |
 | [agno #10682](https://github.com/agno-agi/agno/pull/10682) | A delete that failed reported the run as missing |
 | [feast #6911](https://github.com/feast-dev/feast/pull/6911) | Couchbase writes that failed were counted as written |
 | [feast #6918](https://github.com/feast-dev/feast/pull/6918) | A failed Trino monitoring query read as "no metrics" |
