@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**16 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**17 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -34,6 +34,7 @@ a test that fails on the old code.
 | [langgraph-redis #211](https://github.com/redis-developer/langgraph-redis/pull/211) | The async shallow saver treated a failed read of pending writes as "no pending writes" |
 | [langroid #1201](https://github.com/langroid/langroid/pull/1201) | A LanceDB write that failed was logged and the documents reported as ingested |
 | [redis-vl-python #752](https://github.com/redis/redis-vl-python/pull/752) | `messages` stopped at 10 or 1,000 messages instead of returning the whole session |
+| [kombu #2767](https://github.com/celery/kombu/pull/2767) | A connection error while putting an unacked Redis message back deleted it instead of restoring it |
 | [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
 
 ### In review
