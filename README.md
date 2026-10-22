@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**22 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**23 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -39,6 +39,7 @@ a test that fails on the old code.
 | [kombu #2767](https://github.com/celery/kombu/pull/2767) | A connection error while putting an unacked Redis message back deleted it instead of restoring it |
 | [coverage.py #2339](https://github.com/coveragepy/coveragepy/pull/2339) | A parallel data file saved twice kept its first hash, so `coverage combine` could delete it as a duplicate (released in [coverage 7.17.0](https://pypi.org/project/coverage/7.17.0/)) |
 | [pgqueuer #996](https://github.com/janbjorge/pgqueuer/pull/996) | An empty entrypoint list in `clear_queue` and the log clears wiped the whole table instead of nothing |
+| [pgqueuer #998](https://github.com/janbjorge/pgqueuer/pull/998) | The in-memory scheduler never moved a schedule's next run forward, so slow schedules re-ran with fast ones |
 | [opik #9005](https://github.com/comet-ml/opik/pull/9005) | `opik export` reported a failed dataset or prompt export as skipped and exited 0 |
 | [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
 
