@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**24 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**27 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -34,6 +34,8 @@ a test that fails on the old code.
 | [langgraph-redis #206](https://github.com/redis-developer/langgraph-redis/pull/206) | History "before" a checkpoint returned the whole history |
 | [langgraph-redis #212](https://github.com/redis-developer/langgraph-redis/pull/212) | My own #206 could return the "before" checkpoint itself when its timestamp rounded down (about one run in twenty); fixed once the repo's CI caught it |
 | [langgraph-redis #211](https://github.com/redis-developer/langgraph-redis/pull/211) | The async shallow saver treated a failed read of pending writes as "no pending writes" |
+| [langgraph-redis #213](https://github.com/redis-developer/langgraph-redis/pull/213) | The shallow savers returned pending writes left over from earlier checkpoints, not just the stored one's |
+| [langgraph-redis #214](https://github.com/redis-developer/langgraph-redis/pull/214) | The async shallow saver's `alist` returned empty checkpoints and metadata where the sync `list` returned the stored ones |
 | [langroid #1201](https://github.com/langroid/langroid/pull/1201) | A LanceDB write that failed was logged and the documents reported as ingested |
 | [redis-vl-python #752](https://github.com/redis/redis-vl-python/pull/752) | `messages` stopped at 10 or 1,000 messages instead of returning the whole session |
 | [kombu #2767](https://github.com/celery/kombu/pull/2767) | A connection error while putting an unacked Redis message back deleted it instead of restoring it |
@@ -41,6 +43,7 @@ a test that fails on the old code.
 | [pgqueuer #996](https://github.com/janbjorge/pgqueuer/pull/996) | An empty entrypoint list in `clear_queue` and the log clears wiped the whole table instead of nothing |
 | [pgqueuer #998](https://github.com/janbjorge/pgqueuer/pull/998) | The in-memory scheduler never moved a schedule's next run forward, so slow schedules re-ran with fast ones |
 | [pgqueuer #999](https://github.com/janbjorge/pgqueuer/pull/999) | In-memory, a job cancelled or cleared while it ran was still logged as finished, or logged twice |
+| [pgqueuer #1001](https://github.com/janbjorge/pgqueuer/pull/1001) | Two statistics reads at once (two dashboard tabs, two metrics scrapers) counted the same jobs twice |
 | [opik #9005](https://github.com/comet-ml/opik/pull/9005) | `opik export` reported a failed dataset or prompt export as skipped and exited 0 |
 | [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
 
