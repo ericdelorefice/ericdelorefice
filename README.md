@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**30 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**31 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -47,6 +47,7 @@ a test that fails on the old code.
 | [pgqueuer #999](https://github.com/janbjorge/pgqueuer/pull/999) | In-memory, a job cancelled or cleared while it ran was still logged as finished, or logged twice |
 | [pgqueuer #1001](https://github.com/janbjorge/pgqueuer/pull/1001) | Two statistics reads at once (two dashboard tabs, two metrics scrapers) counted the same jobs twice |
 | [pgqueuer #1018](https://github.com/janbjorge/pgqueuer/pull/1018) | A queue prefix or table name with capital letters installed fine and was then never found, so workers refused to start |
+| [pgqueuer #1038](https://github.com/janbjorge/pgqueuer/pull/1038) | With the psycopg driver, reading the job log crashed on the first failed job, and the dashboard's failure pages returned errors |
 | [opik #9005](https://github.com/comet-ml/opik/pull/9005) | `opik export` reported a failed dataset or prompt export as skipped and exited 0 |
 | [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
 
