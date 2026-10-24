@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**28 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**30 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -36,6 +36,7 @@ a test that fails on the old code.
 | [langgraph-redis #211](https://github.com/redis-developer/langgraph-redis/pull/211) | The async shallow saver treated a failed read of pending writes as "no pending writes" |
 | [langgraph-redis #213](https://github.com/redis-developer/langgraph-redis/pull/213) | The shallow savers returned pending writes left over from earlier checkpoints, not just the stored one's |
 | [langgraph-redis #214](https://github.com/redis-developer/langgraph-redis/pull/214) | The async shallow saver's `alist` returned empty checkpoints and metadata where the sync `list` returned the stored ones |
+| [langgraph-redis #219](https://github.com/redis-developer/langgraph-redis/pull/219) | The regression test the maintainer asked for after a user's second resume with an update crashed (fixed by #213) |
 | [langroid #1201](https://github.com/langroid/langroid/pull/1201) | A LanceDB write that failed was logged and the documents reported as ingested |
 | [redis-vl-python #752](https://github.com/redis/redis-vl-python/pull/752) | `messages` stopped at 10 or 1,000 messages instead of returning the whole session |
 | [rq #2538](https://github.com/rq/rq/pull/2538) | A worker that could not unpickle a job's meta wrote its placeholder back over the real meta whenever it saved the job |
@@ -45,6 +46,7 @@ a test that fails on the old code.
 | [pgqueuer #998](https://github.com/janbjorge/pgqueuer/pull/998) | The in-memory scheduler never moved a schedule's next run forward, so slow schedules re-ran with fast ones |
 | [pgqueuer #999](https://github.com/janbjorge/pgqueuer/pull/999) | In-memory, a job cancelled or cleared while it ran was still logged as finished, or logged twice |
 | [pgqueuer #1001](https://github.com/janbjorge/pgqueuer/pull/1001) | Two statistics reads at once (two dashboard tabs, two metrics scrapers) counted the same jobs twice |
+| [pgqueuer #1018](https://github.com/janbjorge/pgqueuer/pull/1018) | A queue prefix or table name with capital letters installed fine and was then never found, so workers refused to start |
 | [opik #9005](https://github.com/comet-ml/opik/pull/9005) | `opik export` reported a failed dataset or prompt export as skipped and exited 0 |
 | [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
 
