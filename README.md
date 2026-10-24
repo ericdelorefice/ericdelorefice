@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**27 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**28 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -38,6 +38,7 @@ a test that fails on the old code.
 | [langgraph-redis #214](https://github.com/redis-developer/langgraph-redis/pull/214) | The async shallow saver's `alist` returned empty checkpoints and metadata where the sync `list` returned the stored ones |
 | [langroid #1201](https://github.com/langroid/langroid/pull/1201) | A LanceDB write that failed was logged and the documents reported as ingested |
 | [redis-vl-python #752](https://github.com/redis/redis-vl-python/pull/752) | `messages` stopped at 10 or 1,000 messages instead of returning the whole session |
+| [rq #2538](https://github.com/rq/rq/pull/2538) | A worker that could not unpickle a job's meta wrote its placeholder back over the real meta whenever it saved the job |
 | [kombu #2767](https://github.com/celery/kombu/pull/2767) | A connection error while putting an unacked Redis message back deleted it instead of restoring it |
 | [coverage.py #2339](https://github.com/coveragepy/coveragepy/pull/2339) | A parallel data file saved twice kept its first hash, so `coverage combine` could delete it as a duplicate (released in [coverage 7.17.0](https://pypi.org/project/coverage/7.17.0/)) |
 | [pgqueuer #996](https://github.com/janbjorge/pgqueuer/pull/996) | An empty entrypoint list in `clear_queue` and the log clears wiped the whole table instead of nothing |
