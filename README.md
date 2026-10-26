@@ -29,7 +29,7 @@ error, so the caller carries on as if the data never existed.
 
 <details><summary>By project</summary>
 
-pgqueuer 9, langgraph-redis 6, Feast 3, Haystack 3, rq 3, semantic-router 2, Agno, cognee ·
+pgqueuer 9, langgraph-redis 6, Feast 3, Haystack 3, rq 3, semantic-router 2, Agno, cognee,
 coverage.py, Celery kombu, LangChain AWS, LangChain Azure, langroid, opik, RedisVL, mcp-server-manager
 
 </details>
