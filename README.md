@@ -13,7 +13,7 @@ error. The caller carries on as if the data never existed. I find this in open-s
 frameworks and the AI infrastructure around them, and send the fix upstream with a reproduction and
 a test that fails on the old code.
 
-**34 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
+**35 merged so far.** Three of them are fixes to Feast, each merged by the same maintainer within nine hours of being opened.
 
 ### Merged
 
@@ -51,6 +51,7 @@ a test that fails on the old code.
 | [pgqueuer #1018](https://github.com/janbjorge/pgqueuer/pull/1018) | A queue prefix or table name with capital letters installed fine and was then never found, so workers refused to start |
 | [pgqueuer #1038](https://github.com/janbjorge/pgqueuer/pull/1038) | With the psycopg driver, reading the job log crashed on the first failed job, and the dashboard's failure pages returned errors |
 | [pgqueuer #1040](https://github.com/janbjorge/pgqueuer/pull/1040) | A long retry budget crashed partway: the backoff overflowed before its cap applied, ending the job with retries left |
+| [pgqueuer #1041](https://github.com/janbjorge/pgqueuer/pull/1041) | The dashboard's per-entrypoint throughput chart ended at each entrypoint's last job, so a quiet queue still looked busy |
 | [opik #9005](https://github.com/comet-ml/opik/pull/9005) | `opik export` reported a failed dataset or prompt export as skipped and exited 0 |
 | [mcp-server-manager #109](https://github.com/sardine-ai/mcp-server-manager/pull/109) | Exported configuration was written with open file permissions |
 
