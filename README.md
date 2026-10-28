@@ -12,8 +12,8 @@ send the fix upstream with a reproduction and a test that fails on the old code.
 pattern: a backend fails, and the code above it reports "nothing there" or "done" instead of an
 error, so the caller carries on as if the data never existed.
 
-**39 merged across 17 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
-(38 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
+**43 merged across 18 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
+(42 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
 
 ### Selected fixes
 
@@ -30,8 +30,8 @@ error, so the caller carries on as if the data never existed.
 
 <details><summary>By project</summary>
 
-pgqueuer 9, langgraph-redis 6, Feast 3, Haystack 3, rq 5, semantic-router 2, Agno, cognee,
-coverage.py, Celery kombu, LangChain AWS, LangChain Azure, langroid, opik, RedisVL, mcp-server-manager, tox
+pgqueuer 9, langgraph-redis 6, rq 6, Feast 3, Haystack 3, semantic-router 2, Semantic Kernel 2, tox 2, Agno, cognee,
+coverage.py, Celery kombu, LangChain AWS, LangChain Azure, langroid, opik, RedisVL, mcp-server-manager
 
 </details>
 
