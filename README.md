@@ -12,8 +12,8 @@ send the fix upstream with a reproduction and a test that fails on the old code.
 pattern: a backend fails, and the code above it reports "nothing there" or "done" instead of an
 error, so the caller carries on as if the data never existed.
 
-**38 merged across 16 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
-(37 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
+**39 merged across 17 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
+(38 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
 
 ### Selected fixes
 
@@ -26,11 +26,12 @@ error, so the caller carries on as if the data never existed.
 | [pgqueuer #996](https://github.com/janbjorge/pgqueuer/pull/996) | An empty entrypoint list made `clear_queue` and the log clears wipe the whole table instead of nothing |
 | [langgraph-redis #213](https://github.com/redis-developer/langgraph-redis/pull/213) | The shallow savers returned pending writes from earlier checkpoints, so a second resume with an update could fail (a user hit exactly this in #215; I added the regression test the maintainer asked for in #219) |
 | [rq #2552](https://github.com/rq/rq/pull/2552) | Retry intervals given as a generator were lost, so on the first retry the worker quit and the job was left stuck as started |
+| [tox #4203](https://github.com/tox-dev/tox/pull/4203) | With `constrain_package_deps = true`, tox copied extras, editables and local paths into its constraints file, which pip rejects, so an ordinary `deps = coverage[toml]>=7` failed to install |
 
 <details><summary>By project</summary>
 
 pgqueuer 9, langgraph-redis 6, Feast 3, Haystack 3, rq 5, semantic-router 2, Agno, cognee,
-coverage.py, Celery kombu, LangChain AWS, LangChain Azure, langroid, opik, RedisVL, mcp-server-manager
+coverage.py, Celery kombu, LangChain AWS, LangChain Azure, langroid, opik, RedisVL, mcp-server-manager, tox
 
 </details>
 
