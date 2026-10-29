@@ -13,7 +13,7 @@ pattern: a backend fails, and the code above it reports "nothing there" or "done
 error, so the caller carries on as if the data never existed.
 
 **48 merged across 20 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
-(46 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
+(47 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
 
 ### Selected fixes
 
