@@ -15,6 +15,11 @@ error, so the caller carries on as if the data never existed.
 **48 merged across 20 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
 (47 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
 
+Also reported, not counted above: [langchain-couchbase #44](https://github.com/Couchbase-Ecosystem/langchain-couchbase/issues/44) -
+the Couchbase chat history reported a failed write as written, read any error as an empty conversation, and swallowed
+a failed clear. Fixed by dex-the-ai in [#45](https://github.com/Couchbase-Ecosystem/langchain-couchbase/pull/45), with
+tests adapted from mine (I'm co-author on that commit), and released in langchain-couchbase 1.2.0.
+
 ### Selected fixes
 
 | Project | What was wrong |
