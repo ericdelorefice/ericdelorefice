@@ -12,8 +12,8 @@ send the fix upstream with a reproduction and a test that fails on the old code.
 pattern: a backend fails, and the code above it reports "nothing there" or "done" instead of an
 error, so the caller carries on as if the data never existed.
 
-**53 merged across 21 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
-(52 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
+**57 merged across 22 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
+(56 there; the cognee fix was merged through the maintainer's own pull request, [#5320](https://github.com/topoteretes/cognee/pull/5320)).
 
 Also reported, not counted above: [langchain-couchbase #44](https://github.com/Couchbase-Ecosystem/langchain-couchbase/issues/44) -
 the Couchbase chat history reported a failed write as written, read any error as an empty conversation, and swallowed
@@ -35,8 +35,8 @@ tests adapted from mine (I'm co-author on that commit), and released in langchai
 
 <details><summary>By project</summary>
 
-pgqueuer 12, langgraph-redis 7, rq 6, Feast 3, Haystack 3, tox 3, Celery kombu 3, semantic-router 2, Semantic Kernel 2,
-Agno, cognee, coverage.py, LangChain AWS, LangChain Azure, langroid, opik, redis-py, RedisVL, saq, mcp-server-manager, Trinity
+pgqueuer 12, langgraph-redis 7, rq 6, Celery kombu 4, Feast 3, Haystack 3, tox 3, Trinity 3, semantic-router 2, Semantic Kernel 2,
+Agno, cognee, coverage.py, LangChain AWS, LangChain Azure, langroid, opik, pytest-redis, redis-py, RedisVL, saq, mcp-server-manager
 
 </details>
 
