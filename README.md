@@ -12,8 +12,8 @@ send the fix upstream with a reproduction and a test that fails on the old code.
 pattern: a backend fails, and the code above it reports "nothing there" or "done" instead of an
 error, so the caller carries on as if the data never existed.
 
-**86 merged across 32 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
-(84 there; the cognee and instructor fixes were merged through the maintainers' own pull requests, [#5320](https://github.com/topoteretes/cognee/pull/5320) and [#2927](https://github.com/567-labs/instructor/pull/2927)).
+**87 merged across 32 projects.** [See them on GitHub](https://github.com/search?q=is%3Apr+is%3Amerged+author%3Aericdelorefice+-user%3Aericdelorefice+-user%3Abriancheagney&type=pullrequests)
+(85 there; the cognee and instructor fixes were merged through the maintainers' own pull requests, [#5320](https://github.com/topoteretes/cognee/pull/5320) and [#2927](https://github.com/567-labs/instructor/pull/2927)).
 
 Also reported, not counted above: [langchain-couchbase #44](https://github.com/Couchbase-Ecosystem/langchain-couchbase/issues/44) -
 the Couchbase chat history reported a failed write as written, read any error as an empty conversation, and swallowed
@@ -35,7 +35,7 @@ tests adapted from mine (I'm co-author on that commit), and released in langchai
 
 <details><summary>By project</summary>
 
-pgqueuer 15, langgraph-redis 9, rq 8, Trinity 5, Celery kombu 4, Haystack 4, tox 4, Feast 4, redis-py 4, saq 2, semantic-router 2, Semantic Kernel 2, opik 2, fakeredis 2, LangChain AWS 2,
+pgqueuer 15, langgraph-redis 9, rq 9, Trinity 5, Celery kombu 4, Haystack 4, tox 4, Feast 4, redis-py 4, saq 2, semantic-router 2, Semantic Kernel 2, opik 2, fakeredis 2, LangChain AWS 2,
 Agno, Apache Airflow, cognee, coverage.py, django-celery-beat, instructor, Kedro plugins, LangChain Azure, langroid, mirakuru, MLflow, PyrateLimiter, pytest-postgresql, pytest-redis, RedisVL, Unstructured, mcp-server-manager
 
 </details>
